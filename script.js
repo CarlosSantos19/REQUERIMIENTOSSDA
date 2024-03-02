@@ -39,7 +39,6 @@ function playRequerimientos(){
     }
 }
 
-alert("Dar click en escuchar");
 function playDocumentos(){
     // Si el audio ya está reproduciendose, detenerlo
     if (audioDocumentos.paused){
