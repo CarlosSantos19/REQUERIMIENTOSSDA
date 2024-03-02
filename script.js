@@ -17,7 +17,6 @@ const audioDocumentos = document.getElementById('audioDocumentos');
 
 // Función para reproducir el audio
 
-alert("Dar click en escuchar");
 function playAudio(){
     // Si el audio ya está reproduciendose, detenerlo
     if (audioElement.paused){
@@ -29,7 +28,6 @@ function playAudio(){
     }
 }
 
-alert("Dar click en escuchar");
 function playRequerimientos(){
     // Si el audio ya está reproduciendose, detenerlo
     if (audioRequerimientos.paused){
