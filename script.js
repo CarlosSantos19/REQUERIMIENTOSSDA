@@ -1,7 +1,6 @@
 alert("Proyecto formativo de Carlos Andrés Santos, Karol Dayanna y Johan Bolaños");
 
 // Obtener referencia a los botones y al elemento de audio
-
 const playButton = document.getElementById('playButton');
 const stopButton = document.getElementById('stopButton');
 const audioElement = document.getElementById('audioElement');
@@ -14,65 +13,61 @@ const playDocumentosButton = document.getElementById('playDocumentosButton');
 const stopDocumentosButton = document.getElementById('stopDocumentosButton');
 const audioDocumentos = document.getElementById('audioDocumentos');
 
-
 // Función para reproducir el audio
 
-alert("Dar click en escuchar");
-function playAudio(){
-    // Si el audio ya está reproduciendose, detenerlo
-    if (audioElement.paused){
+function playAudio() {
+    // Si el audio ya está reproduciéndose, detenerlo
+    if (audioElement.paused) {
         audioElement.play();
-        playButton.textContent = 'pausar Audio';
+        playButton.textContent = 'Pausar Audio';
     } else {
         audioElement.pause();
-        playButton.textContent = 'Reproducir Audio'
+        playButton.textContent = 'Reproducir Audio';
     }
 }
 
-alert("Dar click en escuchar");
-function playRequerimientos(){
-    // Si el audio ya está reproduciendose, detenerlo
-    if (audioRequerimientos.paused){
+function playRequerimientos() {
+    // Si el audio ya está reproduciéndose, detenerlo
+    if (audioRequerimientos.paused) {
         audioRequerimientos.play();
-        playRequerimientosButton.textContent = 'pausar Requerimientos';
+        playRequerimientosButton.textContent = 'Pausar Requerimientos';
     } else {
         audioRequerimientos.pause();
-        playRequerimientosButton.textContent = 'Reproducir Requerimientos'
+        playRequerimientosButton.textContent = 'Reproducir Requerimientos';
     }
 }
 
-alert("Dar click en escuchar");
-function playDocumentos(){
-    // Si el audio ya está reproduciendose, detenerlo
-    if (audioDocumentos.paused){
+function playDocumentos() {
+    // Si el audio ya está reproduciéndose, detenerlo
+    if (audioDocumentos.paused) {
         audioDocumentos.play();
-        playDocumentosButton.textContent = 'pausar Documentos';
+        playDocumentosButton.textContent = 'Pausar Documentos';
     } else {
         audioDocumentos.pause();
-        playDocumentosButton.textContent = 'Reproducir Documentos'
+        playDocumentosButton.textContent = 'Reproducir Documentos';
     }
 }
+
 // Función para detener el audio
-
-function stopAudio(){
+function stopAudio() {
     audioElement.pause();
-    audioElement.currentTime=0;
-    playButton.textContent = 'Reproducir Audio'; 
+    audioElement.currentTime = 0;
+    playButton.textContent = 'Reproducir Audio';
 }
 
-function stopRequerimientos(){
+function stopRequerimientos() {
     audioRequerimientos.pause();
-    audioRequerimientos.currentTime=0;
-    playRequerimientosButton.textContent = 'Reproducir Requerimientos'; 
+    audioRequerimientos.currentTime = 0;
+    playRequerimientosButton.textContent = 'Reproducir Requerimientos';
 }
 
-function stopDocumentos(){
+function stopDocumentos() {
     audioDocumentos.pause();
-    audioDocumentos.currentTime=0;
-    playDocumentosButton.textContent = 'Reproducir Documentos'; 
+    audioDocumentos.currentTime = 0;
+    playDocumentosButton.textContent = 'Reproducir Documentos';
 }
 
-//Agregar everntos a los botones
+// Agregar eventos a los botones
 playButton.addEventListener('click', playAudio);
 stopButton.addEventListener('click', stopAudio);
 
